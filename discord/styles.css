@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #292727; 
+    color: #d6bdbd;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px; /* Change this value to adjust the roundness */
+    background-color:#202020;
+    color: #d6bdbd; 
+    max-width: 300px; 
+    margin: auto;
+    overflow-wrap: break-word; 
+}
+
+
+a {
+    color: inherit; 
+    text-decoration: underline;
+    cursor: pointer; 
+  }
