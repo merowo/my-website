@@ -16,12 +16,13 @@ body {
 .content {
   text-align: center;
   padding: 20px;
-  border-radius: 3px;
+  border-radius: 30px;
   background-color:#202020;
   color: #fff; 
   max-width: 400px; 
-  margin: auto;
   overflow-wrap: break-word; 
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 /* Pronouns field styling */
