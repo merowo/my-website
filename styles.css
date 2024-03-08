@@ -58,14 +58,14 @@ a {
 }
 
 /* Friends and platform styling */
-.friend, .platform, .sexuality {
+.friend, .platform, .sexuality, .lang {
   display: inline-block;
   position: relative;
   margin: 10px;
   transition: transform 0.3s ease;
 }
 
-.friend:hover, .platform:hover, .sexuality:hover {
+.friend:hover, .platform:hover, .sexuality:hover, .lang:hover {
   transform: scale(1.2);
 }
 
@@ -75,7 +75,8 @@ a {
 }
 
 
-.friend-tooltip, .platform-tooltip, .sexuality-tooltip {
+
+.friend-tooltip, .platform-tooltip, .sexuality-tooltip, .lang-tooltip {
   position: absolute;
   top: 100%;
   left: 50%;
@@ -91,10 +92,11 @@ a {
 
 .friend:hover .friend-tooltip, 
 .platform:hover .platform-tooltip, 
-.sexuality:hover .sexuality-tooltip {
+.sexuality:hover .sexuality-tooltip,
+.lang:hover .lang-tooltip {
   opacity: 1;
 }
-.friend-tooltip:before, .platform-tooltip:before, .sexuality-tooltip:before {
+.friend-tooltip:before, .platform-tooltip:before, .sexuality-tooltip:before, .lang-tooltip:before {
   content: '';
   position: absolute;
   top: -5px;
