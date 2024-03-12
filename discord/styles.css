@@ -17,16 +17,40 @@ body {
     text-align: center;
     padding: 20px;
     border-radius: 50px; /* Change this value to adjust the roundness */
-    background-color:#202020;
+    background-color: #202020;
     color: #d6bdbd; 
     max-width: 300px; 
     margin: auto;
     overflow-wrap: break-word; 
 }
 
-
 a {
     color: inherit; 
     text-decoration: underline;
     cursor: pointer; 
-  }
+}
+
+.jumping-dots span {
+    animation: jump 1s infinite alternate;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.3s;
+}
