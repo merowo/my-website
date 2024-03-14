@@ -111,3 +111,13 @@ a {
 .first-line {
   font-size: 12px; /* Adjust the font size as needed */
 }
+
+.theme-switch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  
+  
+
+}
