@@ -1,0 +1,112 @@
+/* Platform styling */
+.platform {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.platform:hover {
+  transform: scale(1.2);
+}
+
+.platform-tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #5d5c5c;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.platform:hover .platform-tooltip {
+  opacity: 1;
+}
+
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6; /* Light gray background */
+  color: #333; /* Text color */
+}
+
+/* Wrapper styles */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Content styles */
+.content {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange content in a column */
+  align-items: center; /* Center items horizontally */
+  width: 100%; /* Take full width of the page */
+  max-width: 800px; /* Maximum width */
+  margin: 20px; /* Add some margin */
+  background-color: #fff; /* White background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+/* Header styles */
+.header {
+  text-align: center; /* Center text horizontally */
+  margin-bottom: 20px; /* Add space below header */
+}
+
+/* Title styles */
+.title {
+  font-size: 2.5rem;
+  color: #333; /* Dark text color */
+}
+
+/* Description styles */
+.description {
+  font-size: 1.2rem;
+  color: #666; /* Medium text color */
+  margin-bottom: 20px; /* Add space below description */
+}
+
+/* Full Description styles */
+.full-description {
+  text-align: justify; /* Justify text for better readability */
+}
+
+/* Skills styles */
+.skills ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0;
+}
+
+.skills ul li {
+  margin-bottom: 10px; /* Add space between each skill */
+}
+
+/* Cursor styles */
+.cursor {
+  color: green; /* Cursor color */
+  animation: blinkCursor 1s infinite; /* Blink animation */
+}
+
+@keyframes blinkCursor {
+  0% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0; /* Invisible */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+  }
+}
