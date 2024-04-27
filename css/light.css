@@ -110,3 +110,45 @@ body {
     opacity: 1; /* Fully visible */
   }
 }
+
+
+
+/* Add this CSS for the mode toggle button */
+#moon-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 9999;
+  width: 30px;
+  height: 30px;
+}
+
+
+
+.mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 9999;
+}
+
+
+
+
+
+
+/* Light mode icon specific styles */
+#moon-icon{
+  background-color: rgb(197, 185, 185); /* Set background color to white */
+  padding: 5px; /* Add padding to the icon */
+  border-radius: 50%; /* Make the background circular */
+}
+

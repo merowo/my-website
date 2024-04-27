@@ -29,3 +29,27 @@ function animateText() {
 
 // Start the animation
 setInterval(animateText, 2500); // Change text every 1.3 seconds
+
+
+function toggleDarkMode() {
+  const darkCSS = document.getElementById('dark-mode');
+  const lightCSS = document.getElementById('light-mode');
+
+  // Toggle between the active CSS files
+  if (darkCSS.disabled) {
+    darkCSS.disabled = false; // Enable dark mode CSS
+    lightCSS.disabled = true; // Disable light mode CSS
+    document.getElementById('moon-icon').style.display = 'none'; // Hide moon icon
+    document.getElementById('sun-icon').style.display = 'inline-block'; // Show sun icon
+  } else {
+    darkCSS.disabled = true; // Disable dark mode CSS
+    lightCSS.disabled = false; // Enable light mode CSS
+    document.getElementById('moon-icon').style.display = 'inline-block'; // Show moon icon
+    document.getElementById('sun-icon').style.display = 'none'; // Hide sun icon
+  }
+}
+
+// Event listener for mode toggle button
+document.getElementById('mode-toggle').addEventListener('click', function() {
+  toggleDarkMode();
+});
