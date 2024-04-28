@@ -1,4 +1,7 @@
 /* Platform styling */
+.image-container {
+  border-radius: 50px;
+}
 .platform {
   display: inline-block;
   position: relative;

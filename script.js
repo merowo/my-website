@@ -1,5 +1,5 @@
 // Array of names to cycle through
-const names = ['Mero', 'mstrv', '4D 65 72 6F'];
+const names = ['Mero', 'mstrv', '4D 65 72 6F', "merowo", "mewo"];
 let currentIndex = 0;
 
 // Function to animate text
@@ -7,7 +7,6 @@ function animateText() {
   const textElement = document.getElementById('name-placeholder');
   const currentName = names[currentIndex % names.length];
   let text = '';
-
   // Delete previous name letter by letter
   for (let i = 0; i < textElement.textContent.length; i++) {
     setTimeout(() => {
@@ -28,7 +27,7 @@ function animateText() {
 }
 
 // Start the animation
-setInterval(animateText, 2500); // Change text every 1.3 seconds
+setInterval(animateText, 3600); // Change text every 1.3 seconds
 
 
 function toggleDarkMode() {
